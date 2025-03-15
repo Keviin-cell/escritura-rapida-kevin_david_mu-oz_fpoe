@@ -42,8 +42,12 @@ public class Game {
         // Reducir el tiempo en niveles específicos
         if (nivel >= 6 && nivel < 11) {
             nuevoTiempo = 18;
-        } else if (nivel >= 11) {
+        } else if (nivel >= 11 && nivel < 16) {
             nuevoTiempo = 16;
+        } else if (nivel >= 16 && nivel < 21){
+            nuevoTiempo = 14;
+        } else if (nivel >= 21){
+            nuevoTiempo = 12;
         }
 
         tiempoRestante = nuevoTiempo;
