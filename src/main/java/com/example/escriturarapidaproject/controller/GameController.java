@@ -64,6 +64,8 @@ public class GameController {
         actualizarUI();
         iniciarTemporizador();
         actualizarSol();
+
+        entradaUsuario.setOnAction(event -> validarEntrada());
     }
 
     /**
