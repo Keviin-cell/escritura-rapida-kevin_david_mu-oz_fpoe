@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.escriturarapidaproject.controller.MenuController">
+   <children>
+      <ImageView fitHeight="467.0" fitWidth="759.0" layoutX="-17.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fondoDeJuego.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="menuButton" onAction="#changeScene" layoutX="31.0" layoutY="388.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #4a4a4a; -fx-text-fill: white; -fx-background-radius: 10px; -fx-padding: 10px 20px;" text="Menú">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="59.0" fitWidth="60.0" layoutX="675.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo_solo_icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="68.0" prefHeight="251.0" prefWidth="694.0" text="                                                                                                                                             1. Una palabra aparecerá en la pantalla.                                                                             2. Tienes un tiempo límite para escribirla y presionar &quot;Enter&quot;.                                           3. Si escribes correctamente, avanzas al siguiente nivel.                                                    4. A medida que subes de nivel, el tiempo se reduce y las palabras se vuelven más difíciles.                                                                                                                               5. Si el tiempo se agota o escribes mal, el juego termina." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="61.0" text="🎮 ¿Cómo jugar? 🎮   ">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
